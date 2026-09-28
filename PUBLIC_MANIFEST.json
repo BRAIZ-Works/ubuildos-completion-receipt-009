@@ -1,0 +1,123 @@
+{
+  "schema": "UBUILDOS_DAY08_PUBLIC_MANIFEST_V1",
+  "day": 8,
+  "product": "Customer Request Router™",
+  "candidate_semver": "v1.0.1",
+  "release_state": "RELEASE_READY_CANDIDATE_NOT_DEPLOYED",
+  "data_classification": "SYNTHETIC_ONLY",
+  "runtime": "STATIC_CLIENT_SIDE_NO_BACKEND",
+  "external_effects_performed": false,
+  "post_live_delta_budget": [
+    "verified live build URL",
+    "verified public repository URL",
+    "verified LinkedIn permanent URL when it exists",
+    "bounded manifest/checksum reconciliation caused only by those verified URL receipts"
+  ],
+  "members": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 468,
+      "sha256": "2430ca80d19fb721e79f4593efe69e9957a21c394895cfcff1ee6b31c5a767e9"
+    },
+    {
+      "path": "LIMITATIONS.md",
+      "bytes": 445,
+      "sha256": "038f1b179903364ef6ce66a62a3f3ef403d52755caccd07bd2cb512a24d0219f"
+    },
+    {
+      "path": "LINKEDIN_POST.txt",
+      "bytes": 2267,
+      "sha256": "9eaecc7813d97a924923751dfa91531888a10dc9ddd695782f86aa3a4caf8f68"
+    },
+    {
+      "path": "METHODOLOGY.md",
+      "bytes": 564,
+      "sha256": "9b245cc6a35ba892e71242c58390fd0e3125ed664c59c96b53143e67f79d6da4"
+    },
+    {
+      "path": "PRIVACY.md",
+      "bytes": 335,
+      "sha256": "8451f8c7faa0dcb8653d8eb532d5605268370ab84963c4d7615b3102d089fd11"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1348,
+      "sha256": "4b66e3851d1dcaa4f37f465b2b2f78a7cb5f875d33db51ec8596f2adbf1b5d86"
+    },
+    {
+      "path": "RECOVERY.md",
+      "bytes": 272,
+      "sha256": "ba24c995d7c4f6aab27a7b4ae442b6a9b775c114db1b9c538090769d660c9b93"
+    },
+    {
+      "path": "RIGHTS_AND_USE.md",
+      "bytes": 345,
+      "sha256": "6e36f07edde1a470d29aed397619f90fa08bda2d55a899c61d71f493cfba2d27"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 513,
+      "sha256": "bd588ffe9941478a89bc8d8706b5be8597ce57fe87253cc5ea081c5756a362aa"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 582,
+      "sha256": "3d51f8c0e5f6b7bae7870724f2a6b60d8c667720f56043af7d2ff34bc8bc09d0"
+    },
+    {
+      "path": "VERIFICATION_SUMMARY.md",
+      "bytes": 764,
+      "sha256": "ddb7f484ef60c86031fe08bd61017ba8485b8d3f27aafd30d7cb6d6535107b97"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 3595,
+      "sha256": "d6a4241bc2fb6c8c59f0e3eb8b952d8caebf7a2f28f59917776eb2cf5bc5c8b8"
+    },
+    {
+      "path": "assets/UBUILDOS_DAY08_LINKEDIN_CAROUSEL_v1.0.0.pdf",
+      "bytes": 318433,
+      "sha256": "4fbe534ad2306e319746cf20bc36ab6ce597edd33e2f5829a8708465c097e37d"
+    },
+    {
+      "path": "assets/product-screenshot.png",
+      "bytes": 305102,
+      "sha256": "52a22e7820cb2243084b4592ad548ad3ec3b8cb3d7cf16cdbd57ad90aa156ed5"
+    },
+    {
+      "path": "assets/routing-map.png",
+      "bytes": 137459,
+      "sha256": "ab22e78ffb89c412beb985df9b6f500ee0c455ac0086ca02f5a3f6e99e796f0a"
+    },
+    {
+      "path": "assets/routing-map.svg",
+      "bytes": 3021,
+      "sha256": "4adabfb88ff114c947428b5c035a3bef531ed630a07a451b50028e1717a790bb"
+    },
+    {
+      "path": "data/requests.json",
+      "bytes": 1227,
+      "sha256": "f6d9a04dd770f204164d38053d73b2616224bbfd5ed9dd5dd2e7dc3b4e14a905"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4107,
+      "sha256": "a18ba5907d75837426304f161768d3a625759c7b54fa37a28e0fed9b12b69f7c"
+    },
+    {
+      "path": "router.mjs",
+      "bytes": 4059,
+      "sha256": "e634cdbeb8324db2f4dfadf1b5e01d272326b89b2f3735a74ac05e6d840f52c6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 6154,
+      "sha256": "7f8c62c50d443bf39ecaf6f902d1065437a6ecbd95e17eac7247b28163ce60db"
+    },
+    {
+      "path": "tests.mjs",
+      "bytes": 3499,
+      "sha256": "f450586eebae8f5fd425468c348a36bdd01c06794e5615aee4bb3fdd7fbb9611"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+Day 8 of building in public: a customer-ops team gets a mixed request queue.
+
+Some are billing questions.
+Some are support issues.
+Some are sales requests.
+Some are not clear enough to route safely.
+
+The problem isn't receiving the request.
+It's knowing who owns it and what should happen next without guessing.
+
+So I built Customer Request Router™ around one simple question:
+“What should happen next when a customer request arrives?”
+
+Known request types follow an explicit routing table.
+Every item shows type, urgency, owner, and next action.
+Missing, unsupported, or ambiguous inputs become REVIEW with the reason still visible.
+The current visible queue can be exported as JSON or CSV.
+
+No account.
+No CRM integration.
+No autonomous external actions.
+No real customer data.
+
+The app is intentionally small. The test is bigger than the app.
+A capable developer could recreate parts of this quickly. That isn't the claim.
+
+UBuildOS is being tested on whether it can repeatedly take a bounded problem from intake to a working, inspectable, independently verified public release - while preserving the requirements, evidence, recovery path, live readback, and exact completion record.
+
+Simple builds make that test cleaner. The screen may be simple. The test is the whole path around it.
+
+What Day 08 proves
+• Supported request types route deterministically.
+• Unclear inputs fail closed to visible REVIEW instead of an invented route.
+• The routing decision remains inspectable.
+• The visible state is exportable.
+
+What it does NOT prove
+• Live CRM or ticketing integrations.
+• Autonomous actions.
+• Production-scale readiness.
+• Business impact, market demand, or superiority.
+
+The product review reinforced one rule: uncertainty needs a first-class state. Hiding it would make the queue look cleaner and the decision less trustworthy.
+
+Inspect the product. Challenge the routing pattern.
+
+Live build:
+[[LIVE_BUILD_URL_AFTER_VERIFIED_DEPLOYMENT]]
+
+Public repository:
+[[PUBLIC_REPOSITORY_URL_AFTER_VERIFIED_PUBLICATION]]
+
+Day 8/30.
+One intake problem.
+One inspectable routing proof.
+One verified release.
+
+The next build can get more complex. The evidence boundary stays explicit.
+
+#UBuildOS #BuildInPublic #AIEngineering #ProductEngineering

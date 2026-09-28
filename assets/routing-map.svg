@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Customer Request Router routing map</title><desc id="d">Known billing, technical, sales, and general requests route deterministically; missing, unsupported, or ambiguous inputs route to REVIEW.</desc>
+<rect width="1600" height="900" fill="#f3f6fb"/>
+<text x="90" y="90" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#0b63ce">UBUILDOS DAY 08</text>
+<line x1="90" y1="120" x2="1510" y2="120" stroke="#111318" stroke-width="4"/>
+<text x="90" y="190" font-family="Arial,sans-serif" font-size="56" font-weight="800" fill="#111318">One intake. Explicit routes. Visible REVIEW.</text>
+<text x="90" y="238" font-family="Arial,sans-serif" font-size="25" fill="#404957">The public rule table decides only what it knows. Unclear inputs stay inspectable instead of being guessed.</text>
+<g font-family="Arial,sans-serif">
+  <rect x="90" y="315" rx="20" ry="20" width="300" height="150" fill="#fff" stroke="#cfd7e4" stroke-width="2"/><text x="120" y="360" font-size="22" font-weight="800">BILLING</text><text x="120" y="400" font-size="20" fill="#455064">Billing Queue</text><text x="120" y="435" font-size="18" fill="#657086">Verify billing context</text>
+  <rect x="425" y="315" rx="20" ry="20" width="300" height="150" fill="#fff" stroke="#cfd7e4" stroke-width="2"/><text x="455" y="360" font-size="22" font-weight="800">TECHNICAL</text><text x="455" y="400" font-size="20" fill="#455064">Support Queue</text><text x="455" y="435" font-size="18" fill="#657086">Reproduce + confirm scope</text>
+  <rect x="760" y="315" rx="20" ry="20" width="300" height="150" fill="#fff" stroke="#cfd7e4" stroke-width="2"/><text x="790" y="360" font-size="22" font-weight="800">SALES</text><text x="790" y="400" font-size="20" fill="#455064">Sales Queue</text><text x="790" y="435" font-size="18" fill="#657086">Qualify + discovery</text>
+  <rect x="1095" y="315" rx="20" ry="20" width="300" height="150" fill="#fff" stroke="#cfd7e4" stroke-width="2"/><text x="1125" y="360" font-size="22" font-weight="800">GENERAL</text><text x="1125" y="400" font-size="20" fill="#455064">Customer Ops</text><text x="1125" y="435" font-size="18" fill="#657086">Clarify + confirm need</text>
+  <text x="90" y="545" font-size="25" font-weight="700" fill="#111318">Anything missing, unsupported, or ambiguous</text>
+  <path d="M 520 565 C 650 620 760 620 840 660" fill="none" stroke="#d7a32d" stroke-width="5"/>
+  <rect x="565" y="650" rx="20" ry="20" width="470" height="150" fill="#fff8e6" stroke="#d7a32d" stroke-width="3"/><text x="610" y="705" font-size="32" font-weight="900" fill="#7c5900">REVIEW</text><text x="610" y="750" font-size="21" fill="#455064">Unassigned • reason shown • no invented route</text>
+  <text x="90" y="855" font-size="17" fill="#657086">BRAIZ Works / UBuildOS / Customer Request Router™</text><text x="1450" y="855" font-size="17" fill="#657086">08</text>
+</g></svg>

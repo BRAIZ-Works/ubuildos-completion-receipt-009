@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Customer Request Router - a bounded UBuildOS Day 08 public demo for deterministic request routing with visible REVIEW states.">
+  <title>Customer Request Router | UBuildOS Day 08</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#router">Skip to router</a>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">UBUILDOS DAY 08</p>
+      <h1>Customer Request Router<span aria-hidden="true">™</span></h1>
+      <p class="lede">Turn a small intake queue into visible next actions - without guessing when the request is unclear.</p>
+    </div>
+    <div class="header-note" role="note">
+      <strong>Public demo</strong>
+      <span>Synthetic requests only. No integrations. No autonomous actions.</span>
+    </div>
+  </header>
+
+  <main id="router" class="shell">
+    <section class="question" aria-labelledby="question-title">
+      <p class="section-kicker">THE QUESTION</p>
+      <h2 id="question-title">What should happen next when a customer request arrives?</h2>
+      <p>Known request types follow an explicit routing table. Missing, unsupported, or ambiguous inputs stay visible as <strong>REVIEW</strong> with a reason.</p>
+    </section>
+
+    <section class="controls" aria-label="Router controls">
+      <label>Search
+        <input id="search" type="search" placeholder="ID, subject, owner, next action" autocomplete="off">
+      </label>
+      <label>Status
+        <select id="statusFilter">
+          <option value="ALL">All</option>
+          <option value="ROUTED">Routed</option>
+          <option value="REVIEW">Review</option>
+        </select>
+      </label>
+      <label>Urgency
+        <select id="urgencyFilter">
+          <option value="ALL">All</option>
+          <option value="HIGH">High</option>
+          <option value="NORMAL">Normal</option>
+          <option value="LOW">Low</option>
+        </select>
+      </label>
+      <div class="control-actions">
+        <button id="resetBtn" type="button" class="secondary">Reset</button>
+        <button id="exportJsonBtn" type="button">Export visible JSON</button>
+        <button id="exportCsvBtn" type="button" class="secondary">Export visible CSV</button>
+      </div>
+    </section>
+
+    <section class="summary" aria-label="Visible queue summary">
+      <article><span id="visibleCount">0</span><small>visible</small></article>
+      <article><span id="routedCount">0</span><small>routed</small></article>
+      <article><span id="reviewCount">0</span><small>review</small></article>
+      <article><span id="highCount">0</span><small>high urgency</small></article>
+    </section>
+
+    <section aria-labelledby="queue-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">CURRENT VISIBLE STATE</p>
+          <h2 id="queue-title">Request queue</h2>
+        </div>
+        <p id="exportScope" class="muted">Exports use the same filtered state shown below.</p>
+      </div>
+      <div id="requestList" class="request-list" aria-live="polite"></div>
+      <p id="emptyState" class="empty" hidden>No requests match the current filters.</p>
+    </section>
+
+    <section class="routing-map" aria-labelledby="map-title">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">INSPECT THE RULES</p>
+          <h2 id="map-title">Routing map</h2>
+        </div>
+        <p class="muted">The rule table is public and deterministic.</p>
+      </div>
+      <div id="routingRules" class="rule-grid"></div>
+      <div class="review-rule">
+        <strong>Fallback: REVIEW</strong>
+        <span>Missing type, unsupported type, ambiguous type, missing urgency, or unsupported urgency remains visible with an explicit reason.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>BRAIZ Works / UBuildOS / Customer Request Router</span>
+    <span>Day 08/30</span>
+  </footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

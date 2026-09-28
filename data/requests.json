@@ -1,0 +1,10 @@
+[
+  {"id":"REQ-081","receivedAt":"2026-09-28T08:15:00-04:00","requestType":"Billing","urgency":"High","subject":"Invoice total does not match purchase order"},
+  {"id":"REQ-082","receivedAt":"2026-09-28T08:42:00-04:00","requestType":"Technical","urgency":"Normal","subject":"CSV import stops on the third row"},
+  {"id":"REQ-083","receivedAt":"2026-09-28T09:05:00-04:00","requestType":"Sales","urgency":"Normal","subject":"Need pricing for a five-person pilot"},
+  {"id":"REQ-084","receivedAt":"2026-09-28T09:21:00-04:00","requestType":"General","urgency":"Low","subject":"Where can I find the setup guide?"},
+  {"id":"REQ-085","receivedAt":"2026-09-28T09:44:00-04:00","requestType":"Partnership","urgency":"Normal","subject":"Proposal for a referral partnership"},
+  {"id":"REQ-086","receivedAt":"2026-09-28T10:02:00-04:00","requestType":"Billing / Technical","urgency":"High","subject":"Charged twice after an error screen"},
+  {"id":"REQ-087","receivedAt":"2026-09-28T10:18:00-04:00","requestType":"","urgency":"Low","subject":"Please call me about my account"},
+  {"id":"REQ-088","receivedAt":"2026-09-28T10:31:00-04:00","requestType":"Technical","urgency":"Immediate","subject":"Login page shows an unexpected message"}
+]
